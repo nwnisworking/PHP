@@ -61,8 +61,4 @@ class Element{
 		return new self($tag, $text, $attr);
 	}
 
-	// public static function loadComponent(string $name, array $options = []): void{
-	// 	extract($options);
-	// 	include_once "components/$name.php";
-	// }
 }
