@@ -23,6 +23,14 @@ class Element{
 		$this->text = $text;
 		$this->attr = $attr;
 	}
+	
+	/** Get/Set element attribute */
+	public function attr(string $key, mixed $value =''){
+		if(empty($value)) return $this->attr[$key];
+		$this->attr[$key] = $value;
+		
+		return $this;
+	}
 
 	public function __toString(){
 		$attr = '';
